@@ -67,6 +67,9 @@ p {
   margin-bottom: 0.5em;
   line-height: 2em;
 }
+.contenido-principal p{
+  padding: 0.5em;
+}
 #servicios a img,
 #productos a img,
 #nosotros a img,
