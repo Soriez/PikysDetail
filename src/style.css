@@ -63,16 +63,18 @@ main h1,
 h2,
 p {
   margin-left: 0.5em;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 2em;
 }
 #servicios a img,
 #productos a img,
 #nosotros a img,
 #contacto a img {
+  margin-top: 1em;
   width: 100vw;
-  object-fit: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  object-fit: fill;
+  border-radius: 2em;
 }
 #redes ul {
   display: flex;
