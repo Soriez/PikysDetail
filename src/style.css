@@ -60,12 +60,15 @@ header a img {
   object-fit: cover;
 }
 main h1,
-h2,
 p {
   margin-left: 0.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   line-height: 2em;
+}
+.contenido-principal h2{
+  text-align: center;
+  border: 1px solid #eee;
 }
 .contenido-principal p{
   padding: 0.5em;
