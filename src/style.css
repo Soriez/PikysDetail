@@ -46,6 +46,11 @@ header a img {
 .hamburguesa {
   font-size: 1.5em;
 } /*hero abnner que no uso en la version mbile*/
+.show{
+  display: flex;
+  background-color: rgb(8, 27, 1);
+  padding: 1rem 0;
+}
 #hero-banner {
   background-image: url("/imgs/auto1.webp");
   background-position: center;
