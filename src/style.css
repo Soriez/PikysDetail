@@ -76,14 +76,32 @@ p {
   object-fit: fill;
   border-radius: 2em;
 }
+footer{
+  border-top: 1px solid #eee;
+  margin-top: 2em;
+}
+footer h2{
+  text-align: center;
+  border: 1px solid #eee;
+  margin: 1em;
+}
 #redes ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 #redes ul img {
   width: 10vw;
   margin: 0.5em;
+}
+.copy p{
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border: 1px solid #eee;
+  margin: 1.5em;
 }
 
 @media (min-width: 768px) {
