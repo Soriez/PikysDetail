@@ -62,7 +62,7 @@ PRODUCT.md
 DESIGN.md
 skills-lock.json
 docs/design-exploration.md
-docs/mockups/*.json
+docs/mockups/
 *.prompt.txt
 
 # Keep pnpm as the only dependency lockfile

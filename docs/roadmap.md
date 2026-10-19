@@ -25,7 +25,7 @@ Cierre: instalación reproducible, sintaxis válida, build correcto, resultado d
 
 ## Fase 2 — Dirección visual y landing
 
-Estado: en curso. Contexto de producto y tres mockups preparados el 19/10/2026; dirección pendiente de elección. Ver PRODUCT.md y docs/design-exploration.md.
+Estado: en curso. Primera propuesta azul aprobada el 19/10/2026. Recursos visuales y tipografías preparados; revisión de recursos pendiente antes de integrar la landing. Ver docs/visual-assets.md.
 
 - Capturar el contexto de producto y definir la dirección visual con las skills.
 - Diseñar el recorrido: hero, servicios, trabajos con material real, nosotros y contacto demo.
