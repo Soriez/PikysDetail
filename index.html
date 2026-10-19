@@ -1,241 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pikys detail</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pikys Detail: limpieza y cuidado automotriz en San Nicolás de los Arroyos. Un proyecto de diseño frontend para portfolio.">
+    <meta name="theme-color" content="#0837b3">
+    <title>Pikys Detail — El detalle cambia todo</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/styles/main.css">
   </head>
   <body>
-    <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/src/assets/images/Logofinal2.webp" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Pikys Detail, inicio"><span>Pikys</span> Detail</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden><span>Menú</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+      <nav id="site-navigation" aria-label="Navegación principal" class="main-nav">
+        <a href="#servicios">Servicios</a><a href="#trabajos">Trabajos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
       </nav>
     </header>
-    <main>
-      <!-- hero -->
-        <section id="inicio" class="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Texto a la izquierda -->
-        <div class="col-lg-6 order-2 order-lg-1">
-          <h1 class="hero-title">En Pikys Detail</h1>
-          <p class="hero-subtitle">Ofrecemos soluciones de limpieza y cuidado automotriz adaptadas a cada necesidad, desde lavados básicos hasta tratamientos de protección avanzados.</p>
-          <!-- Características destacadas -->
-          <div class="hero-features mt-4">
-            <div class="d-flex align-items-center mb-3">
-              <div class="feature-icon">✓</div>
-              <span class="ms-3">100% Responsabilidad</span>
-            </div>
-            <div class="d-flex align-items-center mb-3">
-              <div class="feature-icon">✓</div>
-              <span class="ms-3">Profesionalismo </span>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="feature-icon">✓</div>
-              <span class="ms-3">Productos premium</span>
-            </div>
-          </div>
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <img class="hero-photo" src="src/assets/images/workshop-blue.png" width="2172" height="724" fetchpriority="high" alt="Vista ilustrativa de un auto azul en el taller de Pikys Detail">
+        <div class="offer-band">
+          <h1 id="hero-title">El detalle cambia todo.</h1>
+          <p>Limpieza y cuidado<br>automotriz en San Nicolás.</p>
+          <a class="button button-light" href="#servicios">Explorar servicios <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
         </div>
-        
-        <!-- Imagen a la derecha -->
-        <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
-          <div class="hero-image-container">
-            <img src="/src/assets/images/Lavadps1.webp" alt="Hero" class="img-fluid hero-image">
+      </section>
+      <section class="services" id="servicios" aria-labelledby="services-title">
+        <div class="services-content">
+          <h2 id="services-title">Cuidado<br>para cada detalle</h2>
+          <div class="service-list">
+            <details name="services"><summary><svg aria-hidden="true" viewBox="0 0 32 32"><path d="m5 12 3-7h16l3 7M5 12h22l2 4v9h-4v-4H7v4H3v-9l2-4Z"/><path d="M8 16h3m10 0h3"/></svg><span>Lavado exterior</span><svg class="row-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></summary><p>Limpieza de carrocería y llantas, seguida de un secado cuidadoso.</p></details>
+            <details name="services"><summary><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M12 9V5a3 3 0 0 1 6 0v4m-8 1h10l2 10h4v7H7V15a5 5 0 0 1 3-5Zm-3 17H4m18 0v3M11 14v8h9"/></svg><span>Limpieza interior</span><svg class="row-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></summary><p>Aspirado y limpieza de las superficies que acompañan cada viaje.</p></details>
+            <details name="services"><summary><svg aria-hidden="true" viewBox="0 0 32 32"><path d="m16 2 4 10 10 4-10 4-4 10-4-10L2 16l10-4 4-10Z"/></svg><span>Detailing</span><svg class="row-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></summary><p>Cuidado de los detalles, con limpieza y terminaciones para cada superficie.</p></details>
           </div>
+          <p class="demo-note">Proyecto de portfolio · contacto de demostración.</p>
         </div>
-      </div>
-    </div>
-  </section>
-  
-<!-- Servicios -->
-<section id="servicios" class="py-5 mt-5">
-  <div class="container">
-    <h2 class="section-title">Nuestros Servicios</h2>
-    
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card card-custom h-100">
-          <img src="/src/assets/images/lavado1.webp" class="card-img-top" alt="Lavado Básico">
-          <div class="card-body">
-            <h5 class="card-title">Lavado Básico</h5>
-            <p class="card-text">Limpieza exterior completa de tu vehículo con productos de alta calidad. Incluye lavado de carrocería, llantas y secado.</p>
-          </div>
+        <figure class="service-visual"><img class="service-photo" src="src/assets/images/detail-blue.png" width="2048" height="768" alt="Detalle ilustrativo del faro y la pintura azul de un automóvil"><figcaption>Imágenes de apertura ilustrativas. La galería muestra fotografías originales.</figcaption></figure>
+      </section>
+      <section class="work-section section-space" id="trabajos" aria-labelledby="work-title">
+        <div class="section-intro">
+          <h2 id="work-title">El trabajo,<br>de cerca.</h2>
+          <p>El cuidado está en las superficies, en las terminaciones y en el tiempo que le dedicamos a cada auto.</p>
         </div>
-      </div>
+        <div class="work-gallery">
+          <figure><img src="src/assets/images/auto1.webp" width="1200" height="500" loading="lazy" alt="Auto azul en el espacio de trabajo de Pikys Detail"><figcaption>En el taller <span>Fotografía original</span></figcaption></figure>
+          <figure><img src="src/assets/images/lavado1.webp" width="1200" height="529" loading="lazy" alt="Automóvil cubierto de espuma durante el lavado exterior"><figcaption>Durante el lavado <span>Fotografía original</span></figcaption></figure>
+        </div>
+      </section>
 
-      <!-- Card 2 -->
-      <div class="col">
-        <div class="card card-custom h-100">
-          <img src="/src/assets/images/auto1.webp" class="card-img-top" alt="Lavado Completo">
-          <div class="card-body">
-            <h5 class="card-title">Lavado Completo</h5>
-            <p class="card-text">Servicio integral que incluye lavado exterior, limpieza interior, aspirado y abrillantado de tablero y plásticos.</p>
-          </div>
+      <section class="about-section section-space" id="nosotros" aria-labelledby="about-title">
+        <div class="about-copy">
+          <h2 id="about-title">Una pasión que<br>viene de familia.</h2>
+          <p>Somos un emprendimiento familiar de San Nicolás, unido por el gusto por los autos y la atención al detalle.</p>
+          <p>El automovilismo es parte de nuestra historia. Esa misma dedicación nos acompaña en el taller: cuidar cada vehículo como cuidaríamos el nuestro.</p>
+          <a class="text-link" href="#contacto">Conocé el espacio de contacto <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
         </div>
-      </div>
+        <figure><img src="src/assets/images/nosotros.webp" width="525" height="296" loading="lazy" alt="Persona junto a un auto de competición en un encuentro de automovilismo"><figcaption>La pasión por los autos, también fuera del taller.</figcaption></figure>
+      </section>
 
-      <!-- Card 3 -->
-      <div class="col">
-        <div class="card card-custom h-100">
-          <img src="/src/assets/images/productos1.webp" class="card-img-top" alt="Detailing Premium">
-          <div class="card-body">
-            <h5 class="card-title">Detailing Premium</h5>
-            <p class="card-text">Tratamiento profesional completo con pulido, encerado, limpieza profunda de tapicería y protección de pintura.</p>
-          </div>
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <h2 id="contact-title">Cada auto tiene<br>su historia.</h2>
+          <p>Este espacio muestra cómo sería el contacto con Pikys Detail.</p>
+          <p class="contact-explanation" id="demo-description">Es una demostración de portfolio: no se envían mensajes ni se reservan turnos.</p>
+          <p class="contact-location">San Nicolás de los Arroyos<br>Provincia de Buenos Aires</p>
         </div>
-      </div>
+        <fieldset class="demo-fields" disabled aria-describedby="demo-description">
+          <legend>Vista previa del formulario</legend>
+          <label for="demo-name">Nombre<input id="demo-name" type="text" placeholder="Tu nombre" autocomplete="off"></label>
+          <label for="demo-email">Correo electrónico<input id="demo-email" type="email" placeholder="tu@email.com" autocomplete="off"></label>
+          <label class="field-wide" for="demo-message">Mensaje<textarea id="demo-message" rows="4" placeholder="Contanos qué cuidado necesita tu auto"></textarea></label>
+          <button class="button demo-submit field-wide" type="button" disabled>Envío no disponible en esta demo</button>
+        </fieldset>
+      </section>
 
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card card-custom h-100">
-          <img src="/src/assets/images/productos1.webp" class="card-img-top" alt="Protección Cerámica">
-          <div class="card-body">
-            <h5 class="card-title">Protección Cerámica</h5>
-            <p class="card-text">Coating cerámico de alta durabilidad que protege la pintura de tu auto contra rayones, suciedad y rayos UV.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Nosotros -->
-<section id="nosotros" class="py-5 mt-5">
-  <div class="container">
-    <h2 class="section-title">Sobre Nosotros</h2>
-    
-    <div class="row align-items-center">
-      <!-- Texto a la izquierda -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="nosotros-content">
-          <h3 class="nosotros-subtitle">Pasión por el detailing automotriz</h3>
-          <p class="nosotros-text">
-            En <strong>Pikys Detail</strong> somos un emprendimiento profesional y familiar que nació de nuestra pasión por el cuidado automotriz. Nos apasiona el TC Carretera y el mundo del automovilismo, lo que nos impulsa a brindar el mejor servicio de detailing para cada vehículo que llega a nuestras manos.
-          </p>
-          <p class="nosotros-text">
-            Combinamos técnicas profesionales con la dedicación y el compromiso que solo un negocio familiar puede ofrecer. Cada auto es tratado con el mismo cuidado y atención al detalle que le daríamos al nuestro.
-          </p>
-          <p class="nosotros-text">
-            Nuestro objetivo es superar tus expectativas y hacer que tu vehículo luzca como recién salido de la agencia, utilizando productos premium y las mejores prácticas del detailing profesional.
-          </p>
-        </div>
-      </div>
-      
-      <!-- Imagen a la derecha -->
-      <div class="col-lg-6">
-        <div class="nosotros-image-container">
-          <img src="/src/assets/images/nosotros.webp" alt="Pikys Detail - Nosotros" class="img-fluid nosotros-image">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row g-4">
-          
-          <!-- Columna 1: Logo y descripción -->
-          <div class="col-lg-4 col-md-6">
-            <img src="/src/assets/images/Logofinal2.webp" alt="Pikys Detail Logo" class="footer-logo mb-3">
-            <p class="footer-description">
-              Expertos en detailing automotriz. Pasión, profesionalismo y dedicación familiar.
-            </p>
-          </div>
-
-          <!-- Columna 2: Contacto -->
-          <div class="col-lg-4 col-md-6">
-            <h5 class="footer-title">Contacto</h5>
-            <ul class="footer-contact">
-              <li>
-                <i class="icon">📞</i>
-                <a href="tel:+5493364595501">+54 9 3364 59-5501</a>
-              </li>
-              <li>
-                <i class="icon">✉️</i>
-                <a href="mailto:pikysoriez@gmail.com">pikysoriez@gmail.com</a>
-              </li>
-              <li>
-                <i class="icon">📍</i>
-                <a href="https://maps.app.goo.gl/C696CvnQq1w5Kft69" target="_blank">Primavera 472, San Nicolás de Los Arroyos, Provincia de Buenos Aires, Argentina</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Columna 3: Redes Sociales -->
-          <div class="col-lg-4 col-md-12">
-            <h5 class="footer-title">Síguenos</h5>
-            <div class="footer-social">
-              <a href="https://instagram.com/pikysdetail" target="_blank" class="social-link">
-                <span class="social-icon">📷</span>
-                <span>Instagram</span>
-              </a>
-              <a href="https://www.facebook.com/gabriel.oriez" target="_blank" class="social-link">
-                <span class="social-icon">📘</span>
-                <span>Facebook</span>
-              </a>
-              <a href="https://wa.me/5491234567890" target="_blank" class="social-link">
-                <span class="social-icon">💬</span>
-                <span>WhatsApp</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="footer-bottom">
-          <hr class="footer-divider">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="footer-copyright">
-                © 2025 <strong>Pikys Detail</strong>. Todos los derechos reservados.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="/src/main.js"></script>
-</body>
+    <footer class="site-footer">
+      <a class="wordmark" href="#inicio" aria-label="Pikys Detail, volver al inicio"><span>Pikys</span> Detail</a>
+      <div class="footer-note"><p>© 2026 Pikys Detail. Proyecto de portfolio.</p><p>Contacto de demostración. No se envían mensajes.</p></div>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>

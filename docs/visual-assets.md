@@ -1,24 +1,24 @@
 # Recursos de la propuesta azul
 
-El 19/10/2026 se eligió la primera propuesta de diseño para Pikys Detail. `design/approved-landing.png` conserva esa referencia visual; no es una captura de una landing ya implementada.
+El 19/10/2026 se eligió la primera propuesta para Pikys Detail. `design/approved-landing.png` conserva el mockup aprobado, como referencia de diseño. La landing implementada utiliza esa dirección y añade las secciones restantes dentro de la misma paleta y tipografía.
 
 ## Tipografía
 
 - Archivo Black: marca tipográfica ancha.
-- Kanit Bold: titulares principales.
+- Kanit Bold: titulares.
 - Manrope variable: navegación y texto de lectura.
 
-Las fuentes se alojan en `src/assets/fonts/`. Se obtuvieron del repositorio oficial Google Fonts y se incluyen sus licencias SIL Open Font License. No se necesita una llamada a una CDN para cargarlas.
+Las fuentes están en `src/assets/fonts/`, junto con sus licencias SIL Open Font License. Proceden del repositorio oficial Google Fonts y se sirven desde el proyecto, sin llamadas a una CDN.
 
-## Imágenes
+## Imágenes utilizadas
 
-Las fotografías originales permanecen en `src/assets/images/`. Las dos imágenes nuevas son ilustraciones fotográficas generadas para reproducir la dirección elegida:
+- `workshop-blue.png`: escena panorámica ilustrativa del taller, generada para la dirección aprobada.
+- `detail-blue.png`: detalle ilustrativo de faro y carrocería azul, generado para la misma propuesta.
+- `auto1.webp` y `lavado1.webp`: fotografías originales de la galería suministradas con el proyecto.
+- `nosotros.webp`: fotografía original de la sección sobre el emprendimiento.
 
-- `workshop-blue.png`: reconstrucción panorámica de la escena del taller.
-- `detail-blue.png`: detalle ilustrativo de un faro y la carrocería azul.
+Las imágenes ilustrativas están identificadas en la apertura; no constituyen evidencia de resultados de clientes ni un antes/después. Las fotografías originales no se reinterpretan como pruebas de servicios adicionales. Los demás recursos heredados se conservan en origen, pero no se incluyen en el build si no están referenciados.
 
-Estas imágenes no prueban resultados de clientes ni constituyen un antes/después. La landing debe distinguir las imágenes ilustrativas del material original del negocio. No se utilizarán para inventar testimonios o prestaciones.
+## Optimización pendiente
 
-## Estado de esta entrega
-
-La estructura técnica, el cambio a pnpm y las exclusiones de secretos y herramientas locales ya tienen su propio commit. Este conjunto reúne el material visual, las fuentes y sus licencias. La integración en HTML/CSS queda después de la revisión de recursos, conservando una unidad de trabajo por commit.
+Los dos PNG de apertura suman aproximadamente 4,84 MB sin comprimir. La siguiente fase debe preparar variantes modernas y tamaños adaptados conservando la apariencia aprobada, optimizar la entrega de fuentes y medir el resultado. La adaptación visual a móvil está implementada; no se ha realizado Lighthouse todavía.

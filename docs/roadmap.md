@@ -6,7 +6,6 @@
 - pnpm como gestor único, con actualización y auditoría de dependencias.
 - Arquitectura estática y ordenada; sin framework adicional por defecto.
 - Contacto de demostración, sin envío ni backend.
-- Usar las skills locales `impeccable` y `frontend-design` para el trabajo frontend.
 - Ejecutar una fase acotada por entrega. No publicar como efecto secundario.
 
 ## Fase 1 — Base técnica y organización
@@ -25,21 +24,22 @@ Cierre: instalación reproducible, sintaxis válida, build correcto, resultado d
 
 ## Fase 2 — Dirección visual y landing
 
-Estado: en curso. Primera propuesta azul aprobada el 19/10/2026. Recursos visuales y tipografías preparados; revisión de recursos pendiente antes de integrar la landing. Ver docs/visual-assets.md.
+Estado: implementación terminada el 19/10/2026, con la propuesta azul aprobada. Landing responsive, recursos locales, contacto demo y ruta heredada integrados. Revisión visual independiente realizada; cierre automático del comparador pendiente por una inconsistencia de estado. La implementación se puede revisar localmente; no se declara cerrado ese control automático. Ver `validation.md` y `visual-assets.md`.
 
-- Capturar el contexto de producto y definir la dirección visual con las skills.
+- Definir el contexto de producto y la dirección visual.
 - Diseñar el recorrido: hero, servicios, trabajos con material real, nosotros y contacto demo.
 - Unificar navegación y footer; integrar el contenido en una sola página.
 - Resolver la presentación del contacto como demo visible, sin mecanismos de envío.
-- Revisar o retirar Bootstrap al implementar el sistema visual.
+- Retirar Bootstrap al implementar el sistema visual.
 - Corregir enlaces inconsistentes, eliminar el WhatsApp de ejemplo y revisar datos comerciales.
 
 Cierre: dirección visual documentada y una landing completa revisable en escritorio y móvil; alcance demo visible y ninguna promesa de funcionalidad ausente.
 
 ## Fase 3 — Accesibilidad y rendimiento
 
-Estado: pendiente.
+Estado: pendiente como fase independiente. La fase 2 ya incluye foco visible, menú accesible, compensación de anclas, movimiento reducido y pruebas responsive; falta ampliar la validación y optimizar recursos.
 
+- Optimizar los PNG de apertura y la entrega de fuentes; medir antes y después.
 - Validar encabezados, landmarks, nombres accesibles, foco y navegación con teclado.
 - Cerrar el menú al navegar y compensar el header en las anclas.
 - Corregir contraste y respetar `prefers-reduced-motion`.
@@ -74,3 +74,5 @@ Verificaciones de fase 1 (19/10/2026):
 - Orden de CSS de contacto comprobado: base común antes de estilos específicos.
 - Los WebP ya no se copian por duplicado desde `public/imgs`; se emiten las imágenes referenciadas en `/assets`.
 - No se realizó Lighthouse ni una auditoría completa de accesibilidad en esta fase. Los hallazgos funcionales/visuales del informe inicial siguen planificados para las fases 2 y 3.
+
+Verificaciones de fase 2 (19/10/2026): `pnpm check` y `pnpm build` correctos; revisión del build en navegador entre 320 y 1600 px y estados interactivos descritos en `validation.md`. Se retiraron Bootstrap/CDN y el código de envío heredado. No se ejecutó Lighthouse ni se publicó el sitio.
