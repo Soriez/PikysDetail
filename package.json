@@ -1,14 +1,21 @@
 {
-  "name": "proyecto-practicas",
+  "name": "pikys-detail",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Landing de Pikys Detail como proyecto de portfolio.",
   "type": "module",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=22.12.0",
+    "pnpm": "11.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "node --check src/main.js && node --check src/contact.js && node --check vite.config.js"
   },
   "devDependencies": {
-    "vite": "^7.1.7"
+    "vite": "7.3.7"
   }
 }

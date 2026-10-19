@@ -1,0 +1,10 @@
+packages:
+  - .
+
+engineStrict: true
+saveExact: true
+
+# Vite uses esbuild's platform binary during development and builds.
+# No other dependency is authorized to run an install script.
+allowBuilds:
+  esbuild: true

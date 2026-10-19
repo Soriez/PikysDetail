@@ -1,22 +1,83 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Dependencies, builds and local caches
+node_modules/
+dist/
+dist-ssr/
+.pnpm-store/
+.cache/
+coverage/
+.work/
 
-node_modules
-dist
-dist-ssr
+# Secrets and machine-specific credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+.netrc
+auth.ini
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials*.json
+*service-account*.json
+serviceAccount*.json
+.aws/
+.azure/
+.ssh/
+.gnupg/
+.config/gcloud/
+secrets/
+.secrets/
 *.local
 
-# Editor directories and files
+# Agent skills, instructions, hooks, state and generated workflow metadata
+.agent/
+.agents/
+.codex/
+.gemini/
+.claude/
+.cursor/
+.windsurf/
+.opencode/
+.continue/
+.copilot/
+.impeccable/
+.github/agents/
+.github/instructions/
+.github/copilot-instructions.md
+.aider*
+.cursorrules
+.windsurfrules
+.mcp.json
+mcp.json
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+GEMINI.md
+COPILOT.md
+PRODUCT.md
+DESIGN.md
+skills-lock.json
+docs/design-exploration.md
+docs/mockups/*.json
+*.prompt.txt
+
+# Keep pnpm as the only dependency lockfile
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+
+# Logs and editors
+logs/
+*.log
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj

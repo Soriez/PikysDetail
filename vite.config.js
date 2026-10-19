@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
+import { fileURLToPath } from 'node:url'
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        contacto: resolve(__dirname, 'contacto.html')
-      }
-    }
-  }
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        contacto: fileURLToPath(new URL('./contacto.html', import.meta.url)),
+      },
+    },
+  },
 })
