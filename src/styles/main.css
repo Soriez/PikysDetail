@@ -1,6 +1,6 @@
-@font-face { font-family: "Archivo Black"; src: url("../assets/fonts/ArchivoBlack-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: Kanit; src: url("../assets/fonts/Kanit-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: Manrope; src: url("../assets/fonts/Manrope-Variable.ttf") format("truetype"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Archivo Black"; src: url("../assets/fonts/ArchivoBlack-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: Kanit; src: url("../assets/fonts/Kanit-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: Manrope; src: url("../assets/fonts/Manrope-Variable.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
 :root { --paper: #f7f8fb; --ink: #081540; --blue: #0837b3; --muted: #53627e; --rule: #c7d3e6; --gutter: 4.166667vw; --header-height: 6.4453125vw; color-scheme: light; }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 16px); }
@@ -23,6 +23,7 @@ h1, h2 { font-family: Kanit, sans-serif; font-weight: 700; letter-spacing: -.035
 .main-nav { display: flex; width: 36.1%; margin-right: 1.041667vw; align-items: center; justify-content: space-between; gap: 16px; font-size: clamp(14px, 1.171875vw, 20px); font-weight: 650; }
 .main-nav a { padding-block: 16px; text-decoration: none; }
 .main-nav a:hover { text-decoration: underline; }
+.hero picture { display: block; }
 .hero-photo { display: block; width: 100%; height: 29.8828125vw; object-fit: cover; }
 .offer-band { min-height: 7.1614583vw; padding: 16px var(--gutter); display: grid; grid-template-columns: minmax(0, 1fr) 17% 17.5%; align-items: center; gap: 3.255208vw; background: var(--blue); color: var(--paper); }
 .offer-band h1 { font-size: 5.208333vw; line-height: .95; white-space: nowrap; }
@@ -167,4 +168,10 @@ figcaption span { color: var(--muted); font-size: 12px; }
   .demo-fields legend { font-size: 18px; }
   .demo-fields input, .demo-fields textarea { font-size: 16px; }
   .site-footer { flex-direction: column; align-items: flex-start; gap: 24px; padding-block: 32px; }
+}
+
+/* Keep compact text links comfortable to reach on a touch screen. */
+@media (max-width: 960px) {
+  .site-header .wordmark { display: block; min-height: 44px; line-height: 44px; }
+  .text-link, .site-footer .wordmark { min-height: 44px; }
 }
