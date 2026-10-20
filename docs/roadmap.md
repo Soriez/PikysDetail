@@ -16,7 +16,7 @@ La aceptación visual y la revisión independiente están documentadas localment
 
 WebP responsive, recorte móvil equivalente, variantes de galería, WOFF2 completo y precarga de fuentes. Revisión de teclado, foco, reflow y estados; Lighthouse móvil/escritorio, Chrome/Edge y auditoría de dependencias.
 
-Resultados finales: rendimiento móvil 96 y escritorio 100; accesibilidad automática, buenas prácticas y SEO 100 en los entornos medidos. La transferencia móvil medida baja aproximadamente un 92,5 %. Ver `validation.md` para metodología y límites: no se declara certificación integral ni pruebas físicas o motores no ejecutados.
+Resultados medidos el 19/10/2026, anteriores al cambio de fotografía: rendimiento móvil 96 y escritorio 100; accesibilidad automática, buenas prácticas y SEO 100 en los entornos medidos. La transferencia móvil medida baja aproximadamente un 92,5 %. Ver `validation.md` para metodología y límites: no se declara certificación integral ni pruebas físicas o motores no ejecutados.
 
 ## Fase 4 — Portfolio y preparación de publicación: completada
 
@@ -31,3 +31,5 @@ El propietario realizará el despliegue. Los pasos y las verificaciones sobre el
 - `portfolio-case-study.md`: caso de portfolio y capturas.
 - `visual-assets.md`: fuentes, masters y derivados.
 - `deployment.md`: preparación para Vercel.
+
+Actualización del 20/10/2026: portada e imagen social con la fotografía original del taller, a petición del propietario; recursos generados de portada retirados. Check, build, cuatro tests y revisión visual de escritorio/móvil correctos.

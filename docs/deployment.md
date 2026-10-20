@@ -14,7 +14,7 @@ El build toma el dominio público de `SITE_URL`, si se define, o de la variable 
 
 Con un dominio disponible se generan canonical, `og:url`, URLs absolutas de la imagen social y `sitemap.xml`. `robots.txt` incluye ese sitemap. Sin dominio, el build local funciona y genera robots sin inventar una URL pública; la imagen social usa su ruta local.
 
-La portada incluye descripción, Open Graph, Twitter Card, favicon y una imagen social de 1200×630. El sitemap contiene únicamente la landing; `contacto.html` conserva `noindex` y redirige a `index.html#contacto` mediante HTML, con enlace alternativo.
+La portada incluye descripción, Open Graph, Twitter Card, favicon y una imagen social de 1200×500. El sitemap contiene únicamente la landing; `contacto.html` conserva `noindex` y redirige a `index.html#contacto` mediante HTML, con enlace alternativo.
 
 ## Comportamiento del hosting
 

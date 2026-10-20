@@ -33,7 +33,7 @@ Después:
 - Una fotografía panorámica y una franja cobalto sustituyen el hero dividido oscuro. Archivo Black, Kanit y Manrope aportan una voz tipográfica local y consistente.
 - Una sola página reúne servicios, trabajos, historia y contacto. Los servicios utilizan `details` nativos, y el menú móvil añade únicamente el JavaScript necesario.
 - El contacto informa de su alcance antes de los campos, que están deshabilitados. Se retiraron el código de envío heredado, los enlaces de ejemplo y las dependencias de CDN.
-- Se distingue el material ilustrativo de apertura de las fotografías originales del negocio. No se añaden reseñas, cifras comerciales ni resultados ficticios.
+- La portada muestra la fotografía original del taller; el detalle ilustrativo del faro se distingue del material original del negocio. No se añaden reseñas, cifras comerciales ni resultados ficticios.
 - HTML conserva el contenido; Vite procesa los recursos. pnpm, dependencias exactas y un único lockfile mantienen una instalación reproducible.
 
 ## Rendimiento medido
@@ -57,3 +57,5 @@ Son mediciones locales de laboratorio con Lighthouse 13.5.0. Las puntuaciones pu
 ## Entrega
 
 Código estático preparado para Vercel, configuración de metadatos por dominio, pruebas de build y capturas de página completa: [escritorio](portfolio/landing-desktop.webp) y [móvil](portfolio/landing-mobile.webp). El despliegue lo realiza el propietario.
+
+Actualización del 20/10/2026: portada e imagen social sustituidas por la fotografía original del taller. Las métricas de Lighthouse anteriores corresponden a la versión medida el 19/10/2026; no se volvieron a medir por este cambio de imagen. Las capturas de presentación se actualizan a la portada original.

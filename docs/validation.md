@@ -44,3 +44,5 @@ El navegador integrado no respondió al atajo de zoom nativo; se comprobó reflo
 La revisión independiente del refinamiento visual queda separada del registro histórico del comparador, cuyo estado automático de fase 2 conserva una inconsistencia documentada localmente. No se alteraron recibos ni se declararon fases de esa herramienta cerradas.
 
 El despliegue, las cabeceras efectivas del hosting y la validación final sobre el dominio público corresponden al propietario, según [deployment.md](deployment.md).
+
+Actualización del 20/10/2026: portada e imagen social sustituidas por la fotografía original del taller. Las métricas de Lighthouse anteriores corresponden a la versión medida el 19/10/2026; no se volvieron a medir por este cambio de imagen. Las capturas de presentación se actualizan a la portada original.

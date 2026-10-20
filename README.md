@@ -45,9 +45,9 @@ HTML semántico, CSS y JavaScript nativo sobre Vite, sin framework de interfaz n
 
 ## Diseño y estado
 
-La cabecera, la fotografía panorámica y la franja cobalto reproducen la dirección elegida. Las imágenes de apertura son ilustrativas y están identificadas; la galería y la sección sobre el emprendimiento conservan fotografías originales. Las fuentes y sus licencias se alojan en el proyecto.
+La cabecera, la fotografía panorámica y la franja cobalto reproducen la dirección elegida. La portada, la galería y la sección sobre el emprendimiento utilizan fotografías originales. El detalle ilustrativo del faro está identificado. Las fuentes y sus licencias se alojan en el proyecto.
 
-Implementación y optimización terminadas para el alcance de portfolio. Lighthouse local: rendimiento 96 en móvil y 100 en escritorio; accesibilidad automática, buenas prácticas y SEO 100. Las métricas y sus límites están documentados.
+Implementación y optimización terminadas para el alcance de portfolio. Medición de Lighthouse del 19/10/2026: rendimiento 96 en móvil y 100 en escritorio; accesibilidad automática, buenas prácticas y SEO 100 (anterior a la sustitución de la portada por la foto original). Las métricas y sus límites están documentados.
 
 El proyecto está preparado para Vercel; el despliegue lo realiza el propietario. `vercel.json` fija la instalación y el build mediante Corepack para respetar pnpm 11.24.0. Configurar `ENABLE_EXPERIMENTAL_COREPACK=1` en Vercel. El dominio de producción se toma de `SITE_URL` o de `VERCEL_PROJECT_PRODUCTION_URL`, sin URL ficticia en el build local.
 

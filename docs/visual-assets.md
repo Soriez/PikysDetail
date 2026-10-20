@@ -10,13 +10,11 @@ Conversión realizada con fontTools 4.67.0 y Brotli 1.2.0. No hay llamadas a ser
 
 ## Imágenes
 
-`workshop-blue.png` y `detail-blue.png` son los masters ilustrativos aprobados. Se conservan como material de origen; la página carga exclusivamente sus derivados WebP responsive. Los mayores derivados suman 422.776 B frente a los 4.837.321 B de los PNG.
+El 20/10/2026 se sustituyó la reconstrucción generada de la portada por `auto1.webp`, la fotografía original del taller suministrada con el proyecto. En escritorio se carga esa fotografía de 1200×500, con su variante existente de 640 px. La apertura móvil utiliza recortes de 480 y 781 px del mismo original, sin generación de contenido ni retoques; se conserva el encuadre de 64vw y la posición del 53 %.
 
-La apertura móvil usa una variante recortada del mismo master para evitar descargar partes que quedan fuera del encuadre. El recorte conserva la composición de 64vw y el `object-position` del 53 %; no genera una escena nueva. La galería utiliza versiones de 640 px junto con los originales de 1200 px. Vite emite las variantes referenciadas; el navegador descarga las que necesita mediante `picture`, `srcset` y `sizes`.
+Los archivos de la portada generada y sus variantes se retiraron. `detail-blue.png` y sus derivados siguen siendo el detalle ilustrativo del faro, identificado como tal. `lavado1.webp` y `nosotros.webp` conservan el material original de las demás secciones.
 
-`auto1.webp`, `lavado1.webp` y `nosotros.webp` son fotografías originales suministradas con el proyecto. La apertura declara sus imágenes ilustrativas y la galería identifica el material original. No se presentan como un antes/después de clientes ni como testimonios.
-
-Los derivados se codificaron con sharp 0.35.5: WebP de apertura al 84 %, móvil/galería al 82 %; la vista social es un recorte de 1200×630 del taller, JPEG al 85 %. Los masters y los recursos heredados que no están referenciados no se transfieren en la landing.
+La imagen social también utiliza la fotografía original completa de 1200×500. Los derivados se codifican con sharp 0.35.5, WebP al 84 % y JPEG social al 85 %. La galería mantiene sus variantes responsive y los originales suministrados.
 
 ## Capturas
 
