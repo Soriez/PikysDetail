@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-19",
+  "scope": "Local production build; lab results, not field data or a complete accessibility certification.",
+  "baselineCommit": "46f595a",
+  "runs": {
+    "before-mobile": {
+      "lighthouseVersion": "13.5.0",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 68,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "first-contentful-paint": 3264.28755,
+        "largest-contentful-paint": 29101.1917,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.005494999225039954,
+        "total-byte-weight": 5522112
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "final-mobile": {
+      "lighthouseVersion": "13.5.0",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 908.8530000000001,
+        "largest-contentful-paint": 2708.853,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 411756
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      }
+    },
+    "final-desktop": {
+      "lighthouseVersion": "13.5.0",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 253.1572,
+        "largest-contentful-paint": 813.1571999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 734882
+      },
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      }
+    },
+    "final-edge": {
+      "lighthouseVersion": "13.5.0",
+      "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 250.9774,
+        "largest-contentful-paint": 810.9774,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 734882
+      },
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      }
+    }
+  }
+}

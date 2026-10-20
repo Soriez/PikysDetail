@@ -22,8 +22,16 @@ Pikys Detail es una landing de portfolio. El contenido, el diseño responsive y 
 - Las imágenes incluyen dimensiones y alternativas textuales. Las fotografías de secciones posteriores se cargan de forma diferida.
 - `prefers-reduced-motion` desactiva el desplazamiento suave y las transiciones.
 
+## Entrega optimizada y despliegue
+
+Las imágenes usan `picture`, `srcset` y `sizes`; las fuentes completas se entregan como WOFF2. Los masters se conservan como origen y Vite solo emite recursos referenciados. La variante móvil mantiene el encuadre aprobado.
+
+`scripts/deployment-metadata.js`, importado por la configuración de Vite, valida el origen público y añade metadatos al HTML principal. Genera robots y, cuando existe un dominio real, canonical y sitemap. Cuatro pruebas cubren builds locales, precedencia de variables, orígenes inválidos y la separación respecto a la redirección heredada.
+
+`vercel.json` fija framework, instalación, build, directorio de salida y cabeceras. Node 24.x y pnpm 11.24.0 se resuelven mediante Corepack. No hay rutas de SPA ni funciones de servidor.
+
 ## Reglas de evolución
 
 Mantener el contenido principal en HTML y extraer módulos solo cuando exista responsabilidad real. No añadir reseñas, precios, métricas ni resultados comerciales sin material verificado. Distinguir imágenes ilustrativas de fotografías originales.
 
-Probar el build, además del servidor de desarrollo. Antes de publicar, definir hosting y ruta base para resolver canonical, metadatos sociales y compatibilidad de rutas. La optimización y medición de rendimiento tienen su propia fase; ver `roadmap.md`.
+Probar el build, además del servidor de desarrollo. Antes de publicar, definir hosting y ruta base para resolver canonical, metadatos sociales y compatibilidad de rutas. La optimización y medición están registradas en `validation.md`; las instrucciones de publicación están en `deployment.md`.

@@ -1,24 +1,23 @@
-# Recursos de la propuesta azul
+# Recursos visuales
 
-El 19/10/2026 se eligió la primera propuesta para Pikys Detail. `design/approved-landing.png` conserva el mockup aprobado, como referencia de diseño. La landing implementada utiliza esa dirección y añade las secciones restantes dentro de la misma paleta y tipografía.
+La primera propuesta azul fue elegida el 19/10/2026. `design/approved-landing.png` conserva el mockup aprobado; las capturas de implementación están en `portfolio/`.
 
-## Tipografía
+## Fuentes locales
 
-- Archivo Black: marca tipográfica ancha.
-- Kanit Bold: titulares.
-- Manrope variable: navegación y texto de lectura.
+Archivo Black para la marca, Kanit Bold para titulares y Manrope variable para lectura y navegación. Las fuentes originales y sus licencias SIL Open Font License permanecen en `src/assets/fonts/`. La entrega utiliza WOFF2 de las fuentes completas, conservando todos sus glifos y pesos: 135.468 B en conjunto, frente a 431.824 B de los TTF. Se precargan las tres familias utilizadas en el primer viewport.
 
-Las fuentes están en `src/assets/fonts/`, junto con sus licencias SIL Open Font License. Proceden del repositorio oficial Google Fonts y se sirven desde el proyecto, sin llamadas a una CDN.
+Conversión realizada con fontTools 4.67.0 y Brotli 1.2.0. No hay llamadas a servicios de fuentes externos.
 
-## Imágenes utilizadas
+## Imágenes
 
-- `workshop-blue.png`: escena panorámica ilustrativa del taller, generada para la dirección aprobada.
-- `detail-blue.png`: detalle ilustrativo de faro y carrocería azul, generado para la misma propuesta.
-- `auto1.webp` y `lavado1.webp`: fotografías originales de la galería suministradas con el proyecto.
-- `nosotros.webp`: fotografía original de la sección sobre el emprendimiento.
+`workshop-blue.png` y `detail-blue.png` son los masters ilustrativos aprobados. Se conservan como material de origen; la página carga exclusivamente sus derivados WebP responsive. Los mayores derivados suman 422.776 B frente a los 4.837.321 B de los PNG.
 
-Las imágenes ilustrativas están identificadas en la apertura; no constituyen evidencia de resultados de clientes ni un antes/después. Las fotografías originales no se reinterpretan como pruebas de servicios adicionales. Los demás recursos heredados se conservan en origen, pero no se incluyen en el build si no están referenciados.
+La apertura móvil usa una variante recortada del mismo master para evitar descargar partes que quedan fuera del encuadre. El recorte conserva la composición de 64vw y el `object-position` del 53 %; no genera una escena nueva. La galería utiliza versiones de 640 px junto con los originales de 1200 px. Vite emite las variantes referenciadas; el navegador descarga las que necesita mediante `picture`, `srcset` y `sizes`.
 
-## Optimización pendiente
+`auto1.webp`, `lavado1.webp` y `nosotros.webp` son fotografías originales suministradas con el proyecto. La apertura declara sus imágenes ilustrativas y la galería identifica el material original. No se presentan como un antes/después de clientes ni como testimonios.
 
-Los dos PNG de apertura suman aproximadamente 4,84 MB sin comprimir. La siguiente fase debe preparar variantes modernas y tamaños adaptados conservando la apariencia aprobada, optimizar la entrega de fuentes y medir el resultado. La adaptación visual a móvil está implementada; no se ha realizado Lighthouse todavía.
+Los derivados se codificaron con sharp 0.35.5: WebP de apertura al 84 %, móvil/galería al 82 %; la vista social es un recorte de 1200×630 del taller, JPEG al 85 %. Los masters y los recursos heredados que no están referenciados no se transfieren en la landing.
+
+## Capturas
+
+Las capturas de portfolio proceden del navegador, con el original `7b61d54` en una copia aislada y el build final en loopback. Se guardan como WebP para que la documentación sea ligera. El registro de validación distingue estas capturas visuales del baseline de rendimiento del commit `46f595a`.
